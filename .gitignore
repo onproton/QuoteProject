@@ -1,3 +1,5 @@
 ._*
 .DS_Store
 config.*
+*.sublime-project
+*.sublime-workspace
