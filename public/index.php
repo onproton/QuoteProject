@@ -37,11 +37,11 @@ function test($db, $start_id=1, $count=10) {
 $start_id = 1;
 $count = 10;
 
-    $start_id = $_GET['start_id'];
 if (isset($_GET['start_id']) && preg_match('/^\d{1,5}$/', $_GET['start_id'])) {
+    $start_id = (int) $_GET['start_id'];
 }
-    $count = $_GET['count'];
 if (isset($_GET['count'])&& preg_match('/^\d{1,3}$/', $_GET['count'])) {
+    $count = (int) $_GET['count'];
 }
 
 
