@@ -18,7 +18,7 @@ $db = new PDO($config['db']['dsn'], $config['db']['user'], $config['db']['pass']
 
 function test($db, $start_id=1, $count=10) {
 
-    $sql = 'SELECT `quotation`, `author` FROM Quotes
+    $sql = 'SELECT `quotation`, `author` FROM `quotes`
         JOIN `authors` ON `authors`.`a_id`= quotes.`author_id`
         LIMIT :start_id, :count';
 
